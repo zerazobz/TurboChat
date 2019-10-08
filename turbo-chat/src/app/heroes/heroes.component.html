@@ -1,6 +1,8 @@
-<p>欢迎!</p>
 <h2>{{ hero.name | uppercase }} Details</h2>
+<div><span>Id: {{ hero.id }}</span></div>
+
 <div>
-	<span>Id: {{ hero.id }}</span>
+	<label>Name: 
+		<input [(ngModel)]="hero.name" placeholder="名字">
+	</label>
 </div>
-<div><span>Name: {{ hero.name }}</span></div>
